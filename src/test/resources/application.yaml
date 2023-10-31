@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: posterr
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  jpa.hibernate.ddl-auto: validate
